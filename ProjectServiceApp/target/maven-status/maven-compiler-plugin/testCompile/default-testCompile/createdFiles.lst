@@ -1,0 +1,13 @@
+com\obsqura\ProjectServiceApp\HomePageTest.class
+com\obsqura\ProjectServiceAppTest\Listeners.class
+com\obsqura\dataProvider\DataProviderUtility.class
+com\obsqura\ProjectServiceApp\CustomersPageTest.class
+pages\LoginPage.class
+com\obsqura\ProjectServiceApp\OrderAndReparationsPagesTest.class
+com\obsqura\ProjectServiceApp\LoginPageTest.class
+pages\HomePage.class
+pages\OrderAndReparationsPages.class
+com\obsqura\ProjectServiceAppTest\Base.class
+pages\InventoryPage.class
+pages\CustomersPage.class
+com\obsqura\ProjectServiceApp\InventoryPageTest.class

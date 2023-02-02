@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name="com.obsqura.ProjectServiceAppTest.Listeners"/>
+</listeners>
+  <test name="Test">
+  <parameter name="browser" value="chrome" /> 
+  
+  <parameter name="user" value="Justin"/>
+  <parameter name="company" value="Ag"/>
+  <parameter name="geoLocate" value="India"/>
+  <parameter name="address" value="St.Mary's Road"/>
+  <parameter name="city" value="Alappuzha"/>
+  <parameter name="postalCode" value="688540"/>
+  <parameter name="telephone" value="9996754321"/>
+  <parameter name="email" value="test@gmail.com"/>
+  <parameter name="vat" value="4567843"/>
+  <parameter name="ssn" value="45678433444"/>
+  <parameter name="comment" value="test Add Client"/>
+  
+    <classes>
+     	<class name="com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest"/>  
+        <class name="com.obsqura.ProjectServiceApp.LoginPageTest"/>  
+        <class name="com.obsqura.ProjectServiceApp.HomePageTest"/>
+        <class name="com.obsqura.ProjectServiceApp.CustomersPageTest"/> 
+        <class name="com.obsqura.ProjectServiceApp.InventoryPageTest">
+        	<methods> 
+         		<include name="verifyClickOnShow"/>
+         		<include name="verifyClickOnImage"/>
+       		</methods>  
+       	</class>
+   </classes>
+   
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

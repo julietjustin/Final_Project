@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\glenj\workspace\ProjectServiceApp\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">31 methods,   31 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.CustomersPageTest" hash-for-method="VerifyClickOnEditClientOptionFromDropdown">VerifyClickOnEditClientOptionFromDropdown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.CustomersPageTest" hash-for-method="verifyClickOnActionButtonCustomerPage">verifyClickOnActionButtonCustomerPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.CustomersPageTest" hash-for-method="verifyClickOnAddClientButton">verifyClickOnAddClientButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest" hash-for-method="verifyClickOnAddReparationButton">verifyClickOnAddReparationButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest" hash-for-method="verifyClickOnAddReparationWindowCloseButton">verifyClickOnAddReparationWindowCloseButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.HomePageTest" hash-for-method="verifyClickOnClientMoreInfo">verifyClickOnClientMoreInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest" hash-for-method="verifyClickOnCompletedRepairsTab">verifyClickOnCompletedRepairsTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.CustomersPageTest" hash-for-method="verifyClickOnConfirmButtonInDelete">verifyClickOnConfirmButtonInDelete</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.CustomersPageTest" hash-for-method="verifyClickOnDeleteClientOptionFromDropdown">verifyClickOnDeleteClientOptionFromDropdown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest" hash-for-method="verifyClickOnExcelButton">verifyClickOnExcelButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest" hash-for-method="verifyClickOnFilterIcon">verifyClickOnFilterIcon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.CustomersPageTest" hash-for-method="verifyClickOnGoBackButtonAddClientWindow">verifyClickOnGoBackButtonAddClientWindow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.InventoryPageTest" hash-for-method="verifyClickOnImage">verifyClickOnImage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.HomePageTest" hash-for-method="verifyClickOnInventoryProductsMoreInfo">verifyClickOnInventoryProductsMoreInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest" hash-for-method="verifyClickOnNextButtonByScrollingDown">verifyClickOnNextButtonByScrollingDown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest" hash-for-method="verifyClickOnPdfButton">verifyClickOnPdfButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.HomePageTest" hash-for-method="verifyClickOnPlusIcon">verifyClickOnPlusIcon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.HomePageTest" hash-for-method="verifyClickOnSendSMS">verifyClickOnSendSMS</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.InventoryPageTest" hash-for-method="verifyClickOnShow">verifyClickOnShow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.HomePageTest" hash-for-method="verifyClickOnUserIconSignOut">verifyClickOnUserIconSignOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.CustomersPageTest" hash-for-method="verifyClickOnViewClientOptionFromDropdown">verifyClickOnViewClientOptionFromDropdown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.HomePageTest" hash-for-method="verifyClickOnreparationMoreInfo">verifyClickOnreparationMoreInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.CustomersPageTest" hash-for-method="verifyEditClientData(India, St.Mary&#039;s Road)">verifyEditClientData(India, St.Mary's Road)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.CustomersPageTest" hash-for-method="verifyEnterDataInSearchField">verifyEnterDataInSearchField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest" hash-for-method="verifyEnterDetailsInFilter">verifyEnterDetailsInFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.CustomersPageTest" hash-for-method="verifyEnterDetailsOnAddClientWindow(Justin, Ag, India, St.Mary&#039;s Road, Alappuzha, 688540, 9996754321, test@gmail.com, 4567843, 456784334...)">verifyEnterDetailsOnAddClientWindow(Justin, Ag, India, St.Mary's Road, Alappuzha, 688540, 9996754321, test@gmail.com, 4567843, 456784334...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.LoginPageTest" hash-for-method="verifyLoginWithInValidUserNameAndPassword">verifyLoginWithInValidUserNameAndPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.LoginPageTest" hash-for-method="verifyLoginWithValidUserNameAndPassword">verifyLoginWithValidUserNameAndPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.CustomersPageTest" hash-for-method="verifyclickOnActionButtonInTable">verifyclickOnActionButtonInTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.HomePageTest" hash-for-method="verifyclickOnAddReparation">verifyclickOnAddReparation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.HomePageTest" hash-for-method="verifyclickOnSendEmail">verifyclickOnSendEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.obsqura.ProjectServiceApp.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithInValidUserNameAndPassword">
+                  </a> <!-- verifyLoginWithInValidUserNameAndPassword -->
+                  <span class="method-name">verifyLoginWithInValidUserNameAndPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidUserNameAndPassword">
+                  </a> <!-- verifyLoginWithValidUserNameAndPassword -->
+                  <span class="method-name">verifyLoginWithValidUserNameAndPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.obsqura.ProjectServiceApp.CustomersPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyClickOnEditClientOptionFromDropdown">
+                  </a> <!-- VerifyClickOnEditClientOptionFromDropdown -->
+                  <span class="method-name">VerifyClickOnEditClientOptionFromDropdown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnActionButtonCustomerPage">
+                  </a> <!-- verifyClickOnActionButtonCustomerPage -->
+                  <span class="method-name">verifyClickOnActionButtonCustomerPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnAddClientButton">
+                  </a> <!-- verifyClickOnAddClientButton -->
+                  <span class="method-name">verifyClickOnAddClientButton</span>
+                  <em>
+(Customer Page Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnConfirmButtonInDelete">
+                  </a> <!-- verifyClickOnConfirmButtonInDelete -->
+                  <span class="method-name">verifyClickOnConfirmButtonInDelete</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnDeleteClientOptionFromDropdown">
+                  </a> <!-- verifyClickOnDeleteClientOptionFromDropdown -->
+                  <span class="method-name">verifyClickOnDeleteClientOptionFromDropdown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnGoBackButtonAddClientWindow">
+                  </a> <!-- verifyClickOnGoBackButtonAddClientWindow -->
+                  <span class="method-name">verifyClickOnGoBackButtonAddClientWindow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnViewClientOptionFromDropdown">
+                  </a> <!-- verifyClickOnViewClientOptionFromDropdown -->
+                  <span class="method-name">verifyClickOnViewClientOptionFromDropdown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEditClientData(India, St.Mary&#039;s Road)">
+                  </a> <!-- verifyEditClientData(India, St.Mary's Road) -->
+                  <span class="method-name">verifyEditClientData</span>
+                  <span class="parameters">(India, St.Mary's Road)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEnterDataInSearchField">
+                  </a> <!-- verifyEnterDataInSearchField -->
+                  <span class="method-name">verifyEnterDataInSearchField</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEnterDetailsOnAddClientWindow(Justin, Ag, India, St.Mary&#039;s Road, Alappuzha, 688540, 9996754321, test@gmail.com, 4567843, 456784334...)">
+                  </a> <!-- verifyEnterDetailsOnAddClientWindow(Justin, Ag, India, St.Mary's Road, Alappuzha, 688540, 9996754321, test@gmail.com, 4567843, 456784334...) -->
+                  <span class="method-name">verifyEnterDetailsOnAddClientWindow</span>
+                  <span class="parameters">(Justin, Ag, India, St.Mary's Road, Alappuzha, 688540, 9996754321, test@gmail.com, 4567843, 45678433444, test Add Client)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyclickOnActionButtonInTable">
+                  </a> <!-- verifyclickOnActionButtonInTable -->
+                  <span class="method-name">verifyclickOnActionButtonInTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnAddReparationButton">
+                  </a> <!-- verifyClickOnAddReparationButton -->
+                  <span class="method-name">verifyClickOnAddReparationButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnAddReparationWindowCloseButton">
+                  </a> <!-- verifyClickOnAddReparationWindowCloseButton -->
+                  <span class="method-name">verifyClickOnAddReparationWindowCloseButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnCompletedRepairsTab">
+                  </a> <!-- verifyClickOnCompletedRepairsTab -->
+                  <span class="method-name">verifyClickOnCompletedRepairsTab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnExcelButton">
+                  </a> <!-- verifyClickOnExcelButton -->
+                  <span class="method-name">verifyClickOnExcelButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnFilterIcon">
+                  </a> <!-- verifyClickOnFilterIcon -->
+                  <span class="method-name">verifyClickOnFilterIcon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnNextButtonByScrollingDown">
+                  </a> <!-- verifyClickOnNextButtonByScrollingDown -->
+                  <span class="method-name">verifyClickOnNextButtonByScrollingDown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnPdfButton">
+                  </a> <!-- verifyClickOnPdfButton -->
+                  <span class="method-name">verifyClickOnPdfButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEnterDetailsInFilter">
+                  </a> <!-- verifyEnterDetailsInFilter -->
+                  <span class="method-name">verifyEnterDetailsInFilter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.obsqura.ProjectServiceApp.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnClientMoreInfo">
+                  </a> <!-- verifyClickOnClientMoreInfo -->
+                  <span class="method-name">verifyClickOnClientMoreInfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnInventoryProductsMoreInfo">
+                  </a> <!-- verifyClickOnInventoryProductsMoreInfo -->
+                  <span class="method-name">verifyClickOnInventoryProductsMoreInfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnPlusIcon">
+                  </a> <!-- verifyClickOnPlusIcon -->
+                  <span class="method-name">verifyClickOnPlusIcon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnSendSMS">
+                  </a> <!-- verifyClickOnSendSMS -->
+                  <span class="method-name">verifyClickOnSendSMS</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnUserIconSignOut">
+                  </a> <!-- verifyClickOnUserIconSignOut -->
+                  <span class="method-name">verifyClickOnUserIconSignOut</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnreparationMoreInfo">
+                  </a> <!-- verifyClickOnreparationMoreInfo -->
+                  <span class="method-name">verifyClickOnreparationMoreInfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyclickOnAddReparation">
+                  </a> <!-- verifyclickOnAddReparation -->
+                  <span class="method-name">verifyclickOnAddReparation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyclickOnSendEmail">
+                  </a> <!-- verifyclickOnSendEmail -->
+                  <span class="method-name">verifyclickOnSendEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.obsqura.ProjectServiceApp.InventoryPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnImage">
+                  </a> <!-- verifyClickOnImage -->
+                  <span class="method-name">verifyClickOnImage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyClickOnShow">
+                  </a> <!-- verifyClickOnShow -->
+                  <span class="method-name">verifyClickOnShow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\glenj\workspace\ProjectServiceApp\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.obsqura.ProjectServiceAppTest.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;address&quot; value=&quot;St.Mary&amp;#039;s Road&quot;/&gt;
+    &lt;parameter name=&quot;city&quot; value=&quot;Alappuzha&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;postalCode&quot; value=&quot;688540&quot;/&gt;
+    &lt;parameter name=&quot;vat&quot; value=&quot;4567843&quot;/&gt;
+    &lt;parameter name=&quot;company&quot; value=&quot;Ag&quot;/&gt;
+    &lt;parameter name=&quot;telephone&quot; value=&quot;9996754321&quot;/&gt;
+    &lt;parameter name=&quot;comment&quot; value=&quot;test Add Client&quot;/&gt;
+    &lt;parameter name=&quot;user&quot; value=&quot;Justin&quot;/&gt;
+    &lt;parameter name=&quot;geoLocate&quot; value=&quot;India&quot;/&gt;
+    &lt;parameter name=&quot;email&quot; value=&quot;test@gmail.com&quot;/&gt;
+    &lt;parameter name=&quot;ssn&quot; value=&quot;45678433444&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest&quot;/&gt;
+      &lt;class name=&quot;com.obsqura.ProjectServiceApp.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.obsqura.ProjectServiceApp.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.obsqura.ProjectServiceApp.CustomersPageTest&quot;/&gt;
+      &lt;class name=&quot;com.obsqura.ProjectServiceApp.InventoryPageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyClickOnShow&quot;/&gt;
+          &lt;include name=&quot;verifyClickOnImage&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.obsqura.ProjectServiceApp.InventoryPageTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">RegressionTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyClickOnClientMoreInfo</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyClickOnPlusIcon</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyclickOnAddReparation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">SmokeTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyClickOnInventoryProductsMoreInfo</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyClickOnSendSMS</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyClickOnUserIconSignOut</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyClickOnreparationMoreInfo</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyclickOnSendEmail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(31);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyEnterDetailsOnAddClientWindow')
+data.setCell(0, 2, 'com.obsqura.ProjectServiceApp.CustomersPageTest')
+data.setCell(0, 3, 8687);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyEnterDetailsInFilter')
+data.setCell(1, 2, 'com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest')
+data.setCell(1, 3, 8356);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyClickOnNextButtonByScrollingDown')
+data.setCell(2, 2, 'com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest')
+data.setCell(2, 3, 8278);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyClickOnPdfButton')
+data.setCell(3, 2, 'com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest')
+data.setCell(3, 3, 8029);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyClickOnImage')
+data.setCell(4, 2, 'com.obsqura.ProjectServiceApp.InventoryPageTest')
+data.setCell(4, 3, 7633);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyclickOnSendEmail')
+data.setCell(5, 2, 'com.obsqura.ProjectServiceApp.HomePageTest')
+data.setCell(5, 3, 7559);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyClickOnAddClientButton')
+data.setCell(6, 2, 'com.obsqura.ProjectServiceApp.CustomersPageTest')
+data.setCell(6, 3, 7303);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyEditClientData')
+data.setCell(7, 2, 'com.obsqura.ProjectServiceApp.CustomersPageTest')
+data.setCell(7, 3, 6842);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyClickOnConfirmButtonInDelete')
+data.setCell(8, 2, 'com.obsqura.ProjectServiceApp.CustomersPageTest')
+data.setCell(8, 3, 6197);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyClickOnExcelButton')
+data.setCell(9, 2, 'com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest')
+data.setCell(9, 3, 5837);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'VerifyClickOnEditClientOptionFromDropdown')
+data.setCell(10, 2, 'com.obsqura.ProjectServiceApp.CustomersPageTest')
+data.setCell(10, 3, 5775);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyClickOnAddReparationButton')
+data.setCell(11, 2, 'com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest')
+data.setCell(11, 3, 5691);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyClickOnDeleteClientOptionFromDropdown')
+data.setCell(12, 2, 'com.obsqura.ProjectServiceApp.CustomersPageTest')
+data.setCell(12, 3, 5684);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyClickOnAddReparationWindowCloseButton')
+data.setCell(13, 2, 'com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest')
+data.setCell(13, 3, 5643);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyclickOnActionButtonInTable')
+data.setCell(14, 2, 'com.obsqura.ProjectServiceApp.CustomersPageTest')
+data.setCell(14, 3, 5538);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyClickOnGoBackButtonAddClientWindow')
+data.setCell(15, 2, 'com.obsqura.ProjectServiceApp.CustomersPageTest')
+data.setCell(15, 3, 5456);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyClickOnCompletedRepairsTab')
+data.setCell(16, 2, 'com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest')
+data.setCell(16, 3, 5451);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyClickOnActionButtonCustomerPage')
+data.setCell(17, 2, 'com.obsqura.ProjectServiceApp.CustomersPageTest')
+data.setCell(17, 3, 5449);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyClickOnViewClientOptionFromDropdown')
+data.setCell(18, 2, 'com.obsqura.ProjectServiceApp.CustomersPageTest')
+data.setCell(18, 3, 5313);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyClickOnFilterIcon')
+data.setCell(19, 2, 'com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest')
+data.setCell(19, 3, 5195);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyEnterDataInSearchField')
+data.setCell(20, 2, 'com.obsqura.ProjectServiceApp.CustomersPageTest')
+data.setCell(20, 3, 5162);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyClickOnreparationMoreInfo')
+data.setCell(21, 2, 'com.obsqura.ProjectServiceApp.HomePageTest')
+data.setCell(21, 3, 5105);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyClickOnClientMoreInfo')
+data.setCell(22, 2, 'com.obsqura.ProjectServiceApp.HomePageTest')
+data.setCell(22, 3, 4541);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyClickOnShow')
+data.setCell(23, 2, 'com.obsqura.ProjectServiceApp.InventoryPageTest')
+data.setCell(23, 3, 3681);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyClickOnInventoryProductsMoreInfo')
+data.setCell(24, 2, 'com.obsqura.ProjectServiceApp.HomePageTest')
+data.setCell(24, 3, 3616);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifyclickOnAddReparation')
+data.setCell(25, 2, 'com.obsqura.ProjectServiceApp.HomePageTest')
+data.setCell(25, 3, 3360);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyClickOnUserIconSignOut')
+data.setCell(26, 2, 'com.obsqura.ProjectServiceApp.HomePageTest')
+data.setCell(26, 3, 3133);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'verifyClickOnSendSMS')
+data.setCell(27, 2, 'com.obsqura.ProjectServiceApp.HomePageTest')
+data.setCell(27, 3, 2856);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'verifyClickOnPlusIcon')
+data.setCell(28, 2, 'com.obsqura.ProjectServiceApp.HomePageTest')
+data.setCell(28, 3, 2536);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verifyLoginWithValidUserNameAndPassword')
+data.setCell(29, 2, 'com.obsqura.ProjectServiceApp.LoginPageTest')
+data.setCell(29, 3, 2209);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'verifyLoginWithInValidUserNameAndPassword')
+data.setCell(30, 2, 'com.obsqura.ProjectServiceApp.LoginPageTest')
+data.setCell(30, 3, 1589);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnNextButtonByScrollingDown</span>
+                <span class="method-start">10515 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnNextButtonByScrollingDown status=SUCCESS method=OrderAndReparationsPag...)</span>
+                <span class="method-start">18802 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">19482 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnExcelButton</span>
+                <span class="method-start">25080 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnExcelButton status=SUCCESS method=OrderAndReparationsPagesTest.verifyC...)</span>
+                <span class="method-start">30919 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">31606 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnCompletedRepairsTab</span>
+                <span class="method-start">37161 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnCompletedRepairsTab status=SUCCESS method=OrderAndReparationsPagesTest...)</span>
+                <span class="method-start">42613 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">43316 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnPdfButton</span>
+                <span class="method-start">48751 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnPdfButton status=SUCCESS method=OrderAndReparationsPagesTest.verifyCli...)</span>
+                <span class="method-start">56783 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">57410 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnAddReparationButton</span>
+                <span class="method-start">62666 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnAddReparationButton status=SUCCESS method=OrderAndReparationsPagesTest...)</span>
+                <span class="method-start">68357 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">69030 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnAddReparationWindowCloseButton</span>
+                <span class="method-start">74609 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnAddReparationWindowCloseButton status=SUCCESS method=OrderAndReparatio...)</span>
+                <span class="method-start">80253 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">80915 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnFilterIcon</span>
+                <span class="method-start">86588 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnFilterIcon status=SUCCESS method=OrderAndReparationsPagesTest.verifyCl...)</span>
+                <span class="method-start">91784 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">92467 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEnterDetailsInFilter</span>
+                <span class="method-start">97762 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyEnterDetailsInFilter status=SUCCESS method=OrderAndReparationsPagesTest.verif...)</span>
+                <span class="method-start">106119 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.ProjectServiceApp.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">106801 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithInValidUserNameAndPassword</span>
+                <span class="method-start">112525 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyLoginWithInValidUserNameAndPassword status=SUCCESS method=LoginPageTest.verif...)</span>
+                <span class="method-start">114115 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">114781 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidUserNameAndPassword</span>
+                <span class="method-start">120082 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyLoginWithValidUserNameAndPassword status=SUCCESS method=LoginPageTest.verifyL...)</span>
+                <span class="method-start">122292 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.ProjectServiceApp.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">122999 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnClientMoreInfo</span>
+                <span class="method-start">128404 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnClientMoreInfo status=SUCCESS method=HomePageTest.verifyClickOnClientM...)</span>
+                <span class="method-start">132946 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">133618 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnInventoryProductsMoreInfo</span>
+                <span class="method-start">140796 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnInventoryProductsMoreInfo status=SUCCESS method=HomePageTest.verifyCli...)</span>
+                <span class="method-start">144413 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">145070 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnPlusIcon</span>
+                <span class="method-start">150700 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnPlusIcon status=SUCCESS method=HomePageTest.verifyClickOnPlusIcon()[pr...)</span>
+                <span class="method-start">153237 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">153954 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnSendSMS</span>
+                <span class="method-start">159248 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnSendSMS status=SUCCESS method=HomePageTest.verifyClickOnSendSMS()[pri:...)</span>
+                <span class="method-start">162105 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">162762 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnUserIconSignOut</span>
+                <span class="method-start">168155 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnUserIconSignOut status=SUCCESS method=HomePageTest.verifyClickOnUserIc...)</span>
+                <span class="method-start">171288 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">171952 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnreparationMoreInfo</span>
+                <span class="method-start">177503 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnreparationMoreInfo status=SUCCESS method=HomePageTest.verifyClickOnrep...)</span>
+                <span class="method-start">182609 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">183315 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyclickOnAddReparation</span>
+                <span class="method-start">188626 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyclickOnAddReparation status=SUCCESS method=HomePageTest.verifyclickOnAddRepar...)</span>
+                <span class="method-start">191986 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">192644 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyclickOnSendEmail</span>
+                <span class="method-start">197966 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyclickOnSendEmail status=SUCCESS method=HomePageTest.verifyclickOnSendEmail()[...)</span>
+                <span class="method-start">205525 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.ProjectServiceApp.CustomersPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">206182 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyClickOnEditClientOptionFromDropdown</span>
+                <span class="method-start">211888 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=VerifyClickOnEditClientOptionFromDropdown status=SUCCESS method=CustomersPageTest.V...)</span>
+                <span class="method-start">217664 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">218318 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnActionButtonCustomerPage</span>
+                <span class="method-start">223626 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnActionButtonCustomerPage status=SUCCESS method=CustomersPageTest.verif...)</span>
+                <span class="method-start">229076 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">229754 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnAddClientButton</span>
+                <span class="method-start">235185 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnAddClientButton status=SUCCESS method=CustomersPageTest.verifyClickOnA...)</span>
+                <span class="method-start">242488 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">243317 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnConfirmButtonInDelete</span>
+                <span class="method-start">248643 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnConfirmButtonInDelete status=SUCCESS method=CustomersPageTest.verifyCl...)</span>
+                <span class="method-start">254841 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">255529 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnDeleteClientOptionFromDropdown</span>
+                <span class="method-start">260884 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnDeleteClientOptionFromDropdown status=SUCCESS method=CustomersPageTest...)</span>
+                <span class="method-start">266568 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">267235 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnGoBackButtonAddClientWindow</span>
+                <span class="method-start">273111 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnGoBackButtonAddClientWindow status=SUCCESS method=CustomersPageTest.ve...)</span>
+                <span class="method-start">278568 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">279212 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnViewClientOptionFromDropdown</span>
+                <span class="method-start">284804 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnViewClientOptionFromDropdown status=SUCCESS method=CustomersPageTest.v...)</span>
+                <span class="method-start">290117 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">290800 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEditClientData(India, St.Mary's Road)</span>
+                <span class="method-start">297765 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyEditClientData status=SUCCESS method=CustomersPageTest.verifyEditClientData(j...)</span>
+                <span class="method-start">304608 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">305317 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEnterDataInSearchField</span>
+                <span class="method-start">310770 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyEnterDataInSearchField status=SUCCESS method=CustomersPageTest.verifyEnterDat...)</span>
+                <span class="method-start">315934 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">316600 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEnterDetailsOnAddClientWindow(Justin, Ag, India, St.Mary's Road, Alappuzha, 688540, 9996754321, test@gmail.com, 4567843, 456784334...)</span>
+                <span class="method-start">322577 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyEnterDetailsOnAddClientWindow status=SUCCESS method=CustomersPageTest.verifyE...)</span>
+                <span class="method-start">331265 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">331965 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyclickOnActionButtonInTable</span>
+                <span class="method-start">337330 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyclickOnActionButtonInTable status=SUCCESS method=CustomersPageTest.verifyclic...)</span>
+                <span class="method-start">342869 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.obsqura.ProjectServiceApp.InventoryPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">343537 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnShow</span>
+                <span class="method-start">348947 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnShow status=SUCCESS method=InventoryPageTest.verifyClickOnShow()[pri:0...)</span>
+                <span class="method-start">352629 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-start">353296 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyClickOnImage</span>
+                <span class="method-start">358736 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnImage status=SUCCESS method=InventoryPageTest.verifyClickOnImage()[pri...)</span>
+                <span class="method-start">366384 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
