@@ -1,88 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="address" value="St.Mary&#039;s Road"/>
-  <parameter name="city" value="Alappuzha"/>
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
   <parameter name="browser" value="chrome"/>
-  <parameter name="postalCode" value="688540"/>
-  <parameter name="vat" value="4567843"/>
-  <parameter name="company" value="Ag"/>
-  <parameter name="telephone" value="9996754321"/>
-  <parameter name="comment" value="test Add Client"/>
-  <parameter name="user" value="Justin"/>
-  <parameter name="geoLocate" value="India"/>
-  <parameter name="email" value="test@gmail.com"/>
-  <parameter name="ssn" value="45678433444"/>
   <listeners>
     <listener class-name="com.obsqura.ProjectServiceAppTest.Listeners"/>
   </listeners>
-  <test name="Test(failed)">
-    <parameter name="address" value="St.Mary&#039;s Road"/>
-    <parameter name="city" value="Alappuzha"/>
+  <test name="ParallelTest(failed)" parallel="methods">
     <parameter name="browser" value="chrome"/>
-    <parameter name="postalCode" value="688540"/>
-    <parameter name="vat" value="4567843"/>
-    <parameter name="company" value="Ag"/>
-    <parameter name="telephone" value="9996754321"/>
-    <parameter name="comment" value="test Add Client"/>
-    <parameter name="user" value="Justin"/>
-    <parameter name="geoLocate" value="India"/>
-    <parameter name="email" value="test@gmail.com"/>
-    <parameter name="ssn" value="45678433444"/>
     <classes>
-      <class name="com.obsqura.ProjectServiceApp.LoginPageTest">
-        <methods>
-          <include name="browserQuit"/>
-          <include name="verifyLoginWithValidUserNameAndPassword"/>
-          <include name="initialiseBrowser"/>
-          <include name="verifyLoginWithInValidUserNameAndPassword"/>
-        </methods>
-      </class> <!-- com.obsqura.ProjectServiceApp.LoginPageTest -->
-      <class name="com.obsqura.ProjectServiceApp.CustomersPageTest">
-        <methods>
-          <include name="verifyClickOnGoBackButtonAddClientWindow"/>
-          <include name="browserQuit"/>
-          <include name="verifyClickOnConfirmButtonInDelete"/>
-          <include name="verifyEnterDataInSearchField"/>
-          <include name="verifyEnterDetailsOnAddClientWindow"/>
-          <include name="initialiseBrowser"/>
-          <include name="verifyClickOnViewClientOptionFromDropdown"/>
-          <include name="VerifyClickOnEditClientOptionFromDropdown"/>
-          <include name="verifyEditClientData"/>
-          <include name="verifyClickOnAddClientButton"/>
-          <include name="verifyClickOnActionButtonCustomerPage"/>
-          <include name="verifyclickOnActionButtonInTable"/>
-          <include name="verifyClickOnDeleteClientOptionFromDropdown"/>
-        </methods>
-      </class> <!-- com.obsqura.ProjectServiceApp.CustomersPageTest -->
-      <class name="com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest">
-        <methods>
-          <include name="verifyClickOnFilterIcon"/>
-          <include name="browserQuit"/>
-          <include name="verifyEnterDetailsInFilter"/>
-          <include name="verifyClickOnAddReparationWindowCloseButton"/>
-          <include name="initialiseBrowser"/>
-          <include name="verifyClickOnAddReparationButton"/>
-          <include name="verifyClickOnPdfButton"/>
-          <include name="verifyClickOnExcelButton"/>
-          <include name="verifyClickOnNextButtonByScrollingDown"/>
-          <include name="verifyClickOnCompletedRepairsTab"/>
-        </methods>
-      </class> <!-- com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest -->
-      <class name="com.obsqura.ProjectServiceApp.HomePageTest">
-        <methods>
-          <include name="verifyClickOnInventoryProductsMoreInfo"/>
-          <include name="verifyclickOnSendEmail"/>
-          <include name="browserQuit"/>
-          <include name="verifyClickOnClientMoreInfo"/>
-          <include name="verifyClickOnUserIconSignOut"/>
-          <include name="initialiseBrowser"/>
-          <include name="verifyClickOnPlusIcon"/>
-          <include name="verifyClickOnreparationMoreInfo"/>
-          <include name="verifyClickOnSendSMS"/>
-          <include name="verifyclickOnAddReparation"/>
-        </methods>
-      </class> <!-- com.obsqura.ProjectServiceApp.HomePageTest -->
       <class name="com.obsqura.ProjectServiceApp.InventoryPageTest">
         <methods>
           <include name="verifyClickOnImage"/>
@@ -92,5 +17,5 @@
         </methods>
       </class> <!-- com.obsqura.ProjectServiceApp.InventoryPageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- ParallelTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\glenj\workspace\ProjectServiceApp\parallelTesting.xml</span>
+                    <span>C:\Users\glenj\workspace\ProjectServiceApp\parallelTestingWithMethods.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,36 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.InventoryPageTest" hash-for-method="verifyClickOnImage">verifyClickOnImage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.InventoryPageTest" hash-for-method="verifyClickOnShow">verifyClickOnShow</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.LoginPageTest" hash-for-method="verifyLoginWithInValidUserNameAndPassword">verifyLoginWithInValidUserNameAndPassword</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.ProjectServiceApp.LoginPageTest" hash-for-method="verifyLoginWithValidUserNameAndPassword">verifyLoginWithValidUserNameAndPassword</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -134,31 +124,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.obsqura.ProjectServiceApp.LoginPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginWithInValidUserNameAndPassword">
-                  </a> <!-- verifyLoginWithInValidUserNameAndPassword -->
-                  <span class="method-name">verifyLoginWithInValidUserNameAndPassword</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginWithValidUserNameAndPassword">
-                  </a> <!-- verifyLoginWithValidUserNameAndPassword -->
-                  <span class="method-name">verifyLoginWithValidUserNameAndPassword</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.obsqura.ProjectServiceApp.InventoryPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -167,6 +135,16 @@
                   <a name="verifyClickOnImage">
                   </a> <!-- verifyClickOnImage -->
                   <span class="method-name">verifyClickOnImage</span>
+                  <div class="stack-trace">java.lang.AssertionError: Not Navigated to home page expected [Home] but found [Login]
+	at pages.LoginPage.loginWithValidUserNameAndPassword(LoginPage.java:42)
+	at com.obsqura.ProjectServiceApp.InventoryPageTest.verifyClickOnImage(InventoryPageTest.java:31)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Click On Image From The Table)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -174,27 +152,36 @@
                   <a name="verifyClickOnShow">
                   </a> <!-- verifyClickOnShow -->
                   <span class="method-name">verifyClickOnShow</span>
+                  <div class="stack-trace">java.lang.AssertionError: Not Navigated to home page expected [Home] but found [Login]
+	at pages.LoginPage.loginWithValidUserNameAndPassword(LoginPage.java:42)
+	at com.obsqura.ProjectServiceApp.InventoryPageTest.verifyClickOnShow(InventoryPageTest.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Click On Show Button)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\glenj\workspace\ProjectServiceApp\parallelTesting.xml</span>
+            <span class="header-content">C:\Users\glenj\workspace\ProjectServiceApp\parallelTestingWithMethods.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;4&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot; parallel=&quot;classes&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot; parallel=&quot;methods&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.obsqura.ProjectServiceAppTest.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;4&quot; verbose=&quot;0&quot; name=&quot;ParallelTest&quot; parallel=&quot;classes&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;ParallelTest&quot; parallel=&quot;methods&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.obsqura.ProjectServiceApp.LoginPageTest&quot;/&gt;
       &lt;class name=&quot;com.obsqura.ProjectServiceApp.InventoryPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ParallelTest --&gt;
@@ -209,7 +196,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">ParallelTest (2 classes)</span>
+                <span class="test-name">ParallelTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -219,6 +206,22 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">RegressionTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyClickOnImage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">SmokeTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyClickOnShow</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -235,28 +238,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyClickOnImage')
+data.setCell(0, 1, 'verifyClickOnShow')
 data.setCell(0, 2, 'com.obsqura.ProjectServiceApp.InventoryPageTest')
-data.setCell(0, 3, 6606);
+data.setCell(0, 3, 3548);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyClickOnShow')
+data.setCell(1, 1, 'verifyClickOnImage')
 data.setCell(1, 2, 'com.obsqura.ProjectServiceApp.InventoryPageTest')
-data.setCell(1, 3, 5177);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLoginWithValidUserNameAndPassword')
-data.setCell(2, 2, 'com.obsqura.ProjectServiceApp.LoginPageTest')
-data.setCell(2, 3, 3084);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyLoginWithInValidUserNameAndPassword')
-data.setCell(3, 2, 'com.obsqura.ProjectServiceApp.LoginPageTest')
-data.setCell(3, 3, 1622);
+data.setCell(1, 3, 3269);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -282,69 +277,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.obsqura.ProjectServiceApp.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">initialiseBrowser(chrome)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">com.obsqura.ProjectServiceApp.InventoryPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">initialiseBrowser(chrome)</span>
+                <span class="method-name">initialiseBrowser(edge)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(edge)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyClickOnImage</span>
-                <span class="method-start">7518 ms</span>
+                <span class="method-start">10179 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.obsqura.ProjectServiceApp.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">verifyLoginWithInValidUserNameAndPassword</span>
-                <span class="method-start">8535 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verifyLoginWithInValidUserNameAndPassword status=SUCCESS method=LoginPageTest.verif...)</span>
-                <span class="method-start">10162 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initialiseBrowser(chrome)</span>
-                <span class="method-start">10898 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.obsqura.ProjectServiceApp.InventoryPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verifyClickOnImage status=SUCCESS method=InventoryPageTest.verifyClickOnImage()[pri...)</span>
-                <span class="method-start">14124 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initialiseBrowser(chrome)</span>
-                <span class="method-start">14801 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.obsqura.ProjectServiceApp.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyLoginWithValidUserNameAndPassword</span>
-                <span class="method-start">16605 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verifyLoginWithValidUserNameAndPassword status=SUCCESS method=LoginPageTest.verifyL...)</span>
-                <span class="method-start">19690 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.obsqura.ProjectServiceApp.InventoryPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyClickOnShow</span>
-                <span class="method-start">20218 ms</span>
+                <span class="method-start">10579 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verifyClickOnShow status=SUCCESS method=InventoryPageTest.verifyClickOnShow()[pri:0...)</span>
-                <span class="method-start">25396 ms</span>
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnImage status=FAILURE method=InventoryPageTest.verifyClickOnImage()[pri...)</span>
+                <span class="method-start">13467 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyClickOnShow status=FAILURE method=InventoryPageTest.verifyClickOnShow()[pri:0...)</span>
+                <span class="method-start">14127 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

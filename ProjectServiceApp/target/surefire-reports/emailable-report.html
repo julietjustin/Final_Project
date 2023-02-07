@@ -9,13 +9,23 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">ParallelTest</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">26,145</td><td></td><td></td></tr>
+<tr><td><a href="#t0">ParallelTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">15,238</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ParallelTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.obsqura.ProjectServiceApp.InventoryPageTest</td><td><a href="#m0">verifyClickOnImage</a></td><td rowspan="1">1675309187488</td><td rowspan="1">6606</td></tr><tr class="passedeven"><td><a href="#m1">verifyClickOnShow</a></td><td rowspan="1">1675309200188</td><td rowspan="1">5177</td></tr><tr class="passedodd"><td rowspan="2">com.obsqura.ProjectServiceApp.LoginPageTest</td><td><a href="#m2">verifyLoginWithInValidUserNameAndPassword</a></td><td rowspan="1">1675309188505</td><td rowspan="1">1622</td></tr><tr class="passedodd"><td><a href="#m3">verifyLoginWithValidUserNameAndPassword</a></td><td rowspan="1">1675309196575</td><td rowspan="1">3084</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ParallelTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.obsqura.ProjectServiceApp.InventoryPageTest</td><td><a href="#m0">verifyClickOnImage</a></td><td rowspan="1">1675747023874</td><td rowspan="1">3269</td></tr><tr class="failedeven"><td><a href="#m1">verifyClickOnShow</a></td><td rowspan="1">1675747024274</td><td rowspan="1">3548</td></tr></tbody>
 </table>
-<h2>ParallelTest</h2><h3 id="m0">com.obsqura.ProjectServiceApp.InventoryPageTest#verifyClickOnImage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.obsqura.ProjectServiceApp.InventoryPageTest#verifyClickOnShow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.obsqura.ProjectServiceApp.LoginPageTest#verifyLoginWithInValidUserNameAndPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.obsqura.ProjectServiceApp.LoginPageTest#verifyLoginWithValidUserNameAndPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ParallelTest</h2><h3 id="m0">com.obsqura.ProjectServiceApp.InventoryPageTest#verifyClickOnImage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Not Navigated to home page expected [Home] but found [Login]
+	at pages.LoginPage.loginWithValidUserNameAndPassword(LoginPage.java:42)
+	at com.obsqura.ProjectServiceApp.InventoryPageTest.verifyClickOnImage(InventoryPageTest.java:31)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.obsqura.ProjectServiceApp.InventoryPageTest#verifyClickOnShow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Not Navigated to home page expected [Home] but found [Login]
+	at pages.LoginPage.loginWithValidUserNameAndPassword(LoginPage.java:42)
+	at com.obsqura.ProjectServiceApp.InventoryPageTest.verifyClickOnShow(InventoryPageTest.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

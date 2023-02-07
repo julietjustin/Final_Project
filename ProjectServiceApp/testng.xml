@@ -21,7 +21,7 @@
   <parameter name="comment" value="test Add Client"/>
   
     <classes>
-     	<class name="com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest"/>  
+      	<class name="com.obsqura.ProjectServiceApp.OrderAndReparationsPagesTest"/>
         <class name="com.obsqura.ProjectServiceApp.LoginPageTest"/>  
         <class name="com.obsqura.ProjectServiceApp.HomePageTest"/>
         <class name="com.obsqura.ProjectServiceApp.CustomersPageTest"/> 
@@ -31,6 +31,7 @@
          		<include name="verifyClickOnImage"/>
        		</methods>  
        	</class>
+       	<class name="com.obsqura.ProjectServiceApp.LoginPageWithDataProviderTest"/>
    </classes>
    
   </test> <!-- Test -->

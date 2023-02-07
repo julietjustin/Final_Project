@@ -17,7 +17,7 @@ public class OrderAndReparationsPagesTest extends Base{
 	OrderAndReparationsPages orderAndReparationsPagesObj;
 	
 	
-	@Test(priority=6)
+	@Test(description="Click On Filter Icon",groups= {"SmokeTest"},priority=7)
 	public void verifyClickOnFilterIcon() throws IOException{
 		loginPageObj=new LoginPage(driver);
 		loginPageObj.loginWithValidUserNameAndPassword();
@@ -26,7 +26,7 @@ public class OrderAndReparationsPagesTest extends Base{
 		orderAndReparationsPagesObj=new OrderAndReparationsPages(driver);
 		orderAndReparationsPagesObj.clickOnFilterIcon();
 	}
-	@Test(priority=7)
+	@Test(description="Enter Data In Filter Fields",groups= {"RegressionTest"},priority=6)
 	public void verifyEnterDetailsInFilter() throws IOException, InterruptedException{
 		loginPageObj=new LoginPage(driver);
 		loginPageObj.loginWithValidUserNameAndPassword();
@@ -36,7 +36,7 @@ public class OrderAndReparationsPagesTest extends Base{
 		orderAndReparationsPagesObj.clickOnFilterIcon();
 		orderAndReparationsPagesObj.EnterDetailsInFilter(ExcelUtility.getTestData(9, 0, constants.Constants.TESTDATAFILE, "OrderReparationsPage"),ExcelUtility.getTestData(3, 0, constants.Constants.TESTDATAFILE, "OrderReparationsPage"));
 	}
-	@Test(priority=4)
+	@Test(description="Click On Add Reparation Button",groups= {"SmokeTest"},priority=5)
 	public void verifyClickOnAddReparationButton() throws IOException {
 	loginPageObj=new LoginPage(driver);
 	loginPageObj.loginWithValidUserNameAndPassword();
@@ -45,7 +45,7 @@ public class OrderAndReparationsPagesTest extends Base{
 	orderAndReparationsPagesObj=new OrderAndReparationsPages(driver);
 	orderAndReparationsPagesObj.clickOnAddReparationButton();
 	}
-	@Test(priority=5)
+	@Test(description="Click On Add Reparation Window CloseButton",groups= {"RegressionTest"},priority=4)
 	public void verifyClickOnAddReparationWindowCloseButton() throws IOException {
 	loginPageObj=new LoginPage(driver);
 	loginPageObj.loginWithValidUserNameAndPassword();
@@ -55,7 +55,7 @@ public class OrderAndReparationsPagesTest extends Base{
 	orderAndReparationsPagesObj.clickOnAddReparationButton();
 	orderAndReparationsPagesObj.clickOnAddReparationWindowCloseButton();
 	}
-	@Test(priority=2)
+	@Test(description="Click On Completed Repairs Tab",groups= {"SmokeTest"},priority=3)
 	public void verifyClickOnCompletedRepairsTab() throws IOException {
 	loginPageObj=new LoginPage(driver);
 	loginPageObj.loginWithValidUserNameAndPassword();
@@ -64,7 +64,7 @@ public class OrderAndReparationsPagesTest extends Base{
 	orderAndReparationsPagesObj=new OrderAndReparationsPages(driver);
 	orderAndReparationsPagesObj.clickOnCompletedRepairsTab();
 	}
-	@Test(priority=3)
+	@Test(description="Click On Pdf Button",groups= {"RegressionTest"},priority=2)
 	public void verifyClickOnPdfButton() throws IOException, InterruptedException{
 	loginPageObj=new LoginPage(driver);
 	loginPageObj.loginWithValidUserNameAndPassword();
@@ -73,7 +73,7 @@ public class OrderAndReparationsPagesTest extends Base{
 	orderAndReparationsPagesObj=new OrderAndReparationsPages(driver);
 	orderAndReparationsPagesObj.clickOnPdfButton();
 	}
-	@Test(priority=1)
+	@Test(description="Click On Excel Button",groups= {"SmokeTest"},priority=1)
 	public void verifyClickOnExcelButton() throws IOException, InterruptedException{
 	loginPageObj=new LoginPage(driver);
 	loginPageObj.loginWithValidUserNameAndPassword();
@@ -82,7 +82,7 @@ public class OrderAndReparationsPagesTest extends Base{
 	orderAndReparationsPagesObj=new OrderAndReparationsPages(driver);
 	orderAndReparationsPagesObj.clickOnExcelButton();
 	}
-	@Test(priority=0)
+	@Test(description="Scroll Down Click On Next Button",groups= {"RegressionTest"},priority=0)
 	public void verifyClickOnNextButtonByScrollingDown() throws IOException, InterruptedException{
 	loginPageObj=new LoginPage(driver);
 	loginPageObj.loginWithValidUserNameAndPassword();

@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.215 s - in TestSuite
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 16.766 s <<< FAILURE! - in TestSuite
+com.obsqura.ProjectServiceApp.InventoryPageTest.verifyClickOnImage  Time elapsed: 2.889 s  <<< FAILURE!
+java.lang.AssertionError: Not Navigated to home page expected [Home] but found [Login]
+	at com.obsqura.ProjectServiceApp.InventoryPageTest.verifyClickOnImage(InventoryPageTest.java:31)
+
+com.obsqura.ProjectServiceApp.InventoryPageTest.verifyClickOnShow  Time elapsed: 3.548 s  <<< FAILURE!
+java.lang.AssertionError: Not Navigated to home page expected [Home] but found [Login]
+	at com.obsqura.ProjectServiceApp.InventoryPageTest.verifyClickOnShow(InventoryPageTest.java:22)
+

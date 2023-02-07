@@ -16,7 +16,7 @@ public class InventoryPageTest extends Base{
 	HomePage homePageObj;
 	InventoryPage inventoryPageObj;
 	
-	@Test
+	@Test(description="Click On Show Button",groups= {"SmokeTest"},priority=0)
 	public void verifyClickOnShow() throws IOException {
 		loginPageObj=new LoginPage(driver);
 		loginPageObj.loginWithValidUserNameAndPassword();
@@ -25,7 +25,7 @@ public class InventoryPageTest extends Base{
 		inventoryPageObj=new InventoryPage(driver);
 		inventoryPageObj.clickShow();
 	}
-	@Test
+	@Test(description="Click On Image From The Table",groups= {"RegressionTest"},priority=0)
 	public void verifyClickOnImage() throws IOException {
 		loginPageObj=new LoginPage(driver);
 		loginPageObj.loginWithValidUserNameAndPassword();

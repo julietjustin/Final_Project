@@ -14,7 +14,10 @@ public class DataProviderUtility {
 	public static Object[][] getDataFromDataprovider(){
 		return new Object[][]
 				{
-			{"admin@admin.com","password"}
+			{"admin@admin.com","password"},
+			{"admin@a","password"},
+			{"admin@admin.com","password123"},
+			{"admin@a.com","password123"}
 			};
 			}
 	}
